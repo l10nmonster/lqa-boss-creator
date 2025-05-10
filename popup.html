@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LQA Boss</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <h1>LQA Boss Flow Capture</h1>
+
+    <div class="capture-section">
+        <button id="capturePageBtn">📸 Capture Current Page</button>
+        <div id="captureInfo">
+            <p>Pages Captured: <span id="pagesCount">0</span></p>
+            <p>Est. Memory: <span id="memoryUsage">0 MB</span></p>
+        </div>
+        <button id="resetCaptureBtn" class="secondary-btn" disabled>Reset All Captures</button>
+    </div>
+
+    <hr>
+
+    <div class="flow-actions">
+        <input type="text" id="flowNameInput" placeholder="Enter Flow Name (optional)">
+        <button id="saveFlowBtn" disabled>💾 Save Flow (.lqaboss)</button>
+    </div>
+
+    <hr>
+    <button id="openViewerBtn" class="secondary-btn">📂 Open LQA Boss File</button>
+    <div id="status">Ready.</div>
+
+    <script src="jszip.min.js"></script> <!-- JSZip for zipping -->
+    <script src="popup.js"></script>
+</body>
+</html>
