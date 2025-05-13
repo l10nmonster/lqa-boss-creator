@@ -31,7 +31,7 @@ capturePageBtn.addEventListener('click', handleCapturePage);
 resetCaptureBtn.addEventListener('click', handleResetCapture);
 saveFlowBtn.addEventListener('click', handleSaveFlow);
 openViewerBtn.addEventListener('click', () => {
-    chrome.tabs.create({ url: 'https://l10nmonster.github.io/lqa-boss/viewer.html' });
+    chrome.tabs.create({ url: 'https://l10nmonster.github.io/lqa-boss/' });
 });
 
 // --- Functions ---

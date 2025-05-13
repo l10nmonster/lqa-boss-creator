@@ -1,13 +1,14 @@
 {
     "manifest_version": 3,
     "name": "LQA Boss Creator",
-    "version": "2.3.0",
+    "version": "3.0.0",
     "description": "Save and test your LQA flows with ease.",
     "permissions": [
         "activeTab",
         "scripting",
         "downloads",
-        "storage"
+        "storage",
+        "debugger"
     ],
     "host_permissions": [
         "<all_urls>"
@@ -28,12 +29,12 @@
         "128": "icons/icon128.png"
       },
     "background": {
-        "service_worker": "background.js"
+        "service_worker": "background.js",
+        "type": "module"
     },
     "web_accessible_resources": [
         {
             "resources": [
-                "html2canvas.min.js",
                 "jszip.min.js"
             ],
             "matches": [
